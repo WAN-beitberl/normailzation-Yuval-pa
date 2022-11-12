@@ -1,0 +1,25 @@
+1) with the current definiton of the table we have two diffrent id colums
+witch for now are redandent.
+Another problem is the fact we have a repeting group (aka the purcesees)
+stored in a singel colum and thus makes it vary hard to query.
+
+2)
+	We can have duplicate customerId's  because it is not the primery key.
+3)
+--create
+	CREATE TABLE IF NOT EXSIST PURCHESES(customerId INTEGER PRIMERY KEY,
+name TEXT NOT NULL, itemName TEXT NOT NULL PRIMERY KEY ,
+	quantity INTEGER)
+
+--insert
+	INSERT INTO PURCHESES VALUES (123, "daniel", "avocado", 2);
+
+4)
+	The table comprimized the law that  "repeating groups are not
+permittrd".
+
+
+
+p.s this entire file was edited in VIM using touch typing so I will be more
+then happey to get some exstra credit for the effort :)
+ 
